@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+// import leaf from "../../Assets/Projects/leaf.png";
+// import emotion from "../../Assets/Projects/emotion.png";
+import ticketRasier from "../../Assets/Projects/TicketRaiserScreenshot.png";
+import resGrant from "../../Assets/Projects/resgrantScreenshot.png";
+// import suicide from "../../Assets/Projects/suicide.png";
+import eCommerceSoundShop from "../../Assets/Projects/ecommerce-sound-shop.png";
+import canvasBoard from "../../Assets/Projects/CanvasBoardScreenshot.png";
 
 function Projects() {
   return (
@@ -23,61 +24,71 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={eCommerceSoundShop}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Ecommerce Platform - Sound Shop"
+              description="Tech Stack - React JS, Next JS, Stripe, Sanity, JavaScript. Integrated Stripe Payments Gateway. Used Sanity to list the products dynamically on website with live changes support. Added cart to track the products. Entire website is made on modern react based framework that is Next.js "
+              ghLink="https://github.com/rohanb459/Portfolio"
+              demoLink="https://sound-shop-self.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={resGrant}
+              isBlog={false}
+              title="ResGrant"
+              description="Tech Stack - HTML, CSS, JavaScript, Bootstrap,Node JS,Express JS, Firebase. The website is robust platform for students who are insearch of Research Grants. A student can request a grant with the website which will store in website’s Database. There is a personalized Dashboard where student cantrack the status of all the applied research Grants"
+              ghLink="https://github.com/rohanb459/ResGrant"
+              demoLink="https://resgrant.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={canvasBoard}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="My Canvas Board"
+              description="Tech Stack - HTML, CSS, JavaScript,Canvas API,Socket.io, DOM, Express JS. Implemented strokes through pencil and eraser by Canvas API. Implemented Notes, download canvas, undo, redo functionalities. Real time drawing when two users connected to the web with the same web address implemented throughsocket.io."
+              ghLink="https://github.com/rohanb459/MyCanvas-Board"
+              demoLink="https://my-canvas-board.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={ticketRasier}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Ticket Raiser"
+              description="Tech Stack - HTML, CSS, JavaScript, DOM, IndexedDB. A user can generate and delete ticket of different colorsbased on priority. A user can sort all the tickets of the same coloraccording to their consent.• A user can edit the contents of the generated ticket. All the tickets are saved inside the browser database which is indexed DB."
+              ghLink="https://github.com/rohanb459/Ticket-Raiser"
+              demoLink="https://ticket-raiser.netlify.app/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            {/* <ProjectCard
               imgPath={leaf}
               isBlog={false}
               title="Plant AI"
               description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
               ghLink="https://github.com/soumyajit4419/Plant_AI"
               demoLink="https://plant49-ai.herokuapp.com/"
-            />
+            /> */}
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            {/* <ProjectCard
               imgPath={suicide}
               isBlog={false}
               title="Ai For Social Good"
               description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
+            /> */}
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
+            {/* <ProjectCard
               imgPath={emotion}
               isBlog={false}
               title="Face Recognition and Emotion Detection"
@@ -85,7 +96,7 @@ function Projects() {
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
+            /> */}
           </Col>
         </Row>
       </Container>
